@@ -6,11 +6,12 @@ import Notesdecours from './Notesdecours.vue'
 import Exercices from './Exercices.vue'
 Vue.use(VueRouter) 
 
-const routes =
-[
+
+export default new VueRouter ({
+routes = [
+
     { path: "/accueil/synthese", component: Synthese},
     { path: "/accueil/notesdecours", component: Notesdecours},
     { path: "/accueil/exercices", component: Exercices}
-]
-
-export default new VueRouter ({routes})
+    
+]})
